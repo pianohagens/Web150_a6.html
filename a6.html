@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bill Calculator</title>
+   	<link rel="stylesheet" href="css/a6.css">
+   	
+   	<script src="js/a6.js">
+
+    </script>
+</head>
+<body>
+    <section id="biller">
+        
+        <h1>Bill Calculator</h1>        
+	        <label for="subtotal">Bill Subtotal :</label>
+	        <input id="subtotal">
+	        <span id="subtotal_error">Enter subtotal</span><br>
+	        
+	        <label for="taxRate">Tax Rate : </label>
+	        <input id="taxRate">
+	        <span id="taxRate_error">Enter sales tax rate (e.g. 9.5)</span><br>
+	        
+	        <label for="salesTax">Sales Tax : </label>
+	        <input id="salesTax" disabled="disabled"><br>
+	        
+                  
+	        <label for="total">Total : </label>
+	        <input id="total" disabled="disabled"><br>
+	  
+	        <label>&nbsp;</label>
+	        <button onClick="validNumber('subtotal','taxRate')">Calculate</button>  
+            <input type="button" id="clear" value="Clear" onClick="clear()">   
+ 
+    </section>
+
+</body>
+</html>
+
+
